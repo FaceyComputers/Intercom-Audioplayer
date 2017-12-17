@@ -30,13 +30,15 @@ SOURCES += \
         mainwindow.cpp \
         settings.cpp \
         extra_button.cpp \
-        addtime.cpp
+        addtime.cpp \
+    sheettomp3.cpp
 
 HEADERS += \
         mainwindow.h \
         settings.h \
         extra_button.h \
-        addtime.h
+        addtime.h \
+    sheettomp3.h
 
 FORMS += \
         mainwindow.ui \

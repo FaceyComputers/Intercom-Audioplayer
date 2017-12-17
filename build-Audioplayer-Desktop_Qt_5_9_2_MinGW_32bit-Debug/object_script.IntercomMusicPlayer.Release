@@ -4,6 +4,7 @@ INPUT(
 ./release-o\settings.o
 ./release-o\extra_button.o
 ./release-o\addtime.o
+./release-o\sheettomp3.o
 ./release-o\audioproperties.o
 ./release-o\fileref.o
 ./release-o\tag.o

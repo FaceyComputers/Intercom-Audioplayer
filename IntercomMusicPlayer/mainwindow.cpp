@@ -206,7 +206,12 @@ void MainWindow::playSound(QString string)
         ui->Time_Slider->setMaximum(BASS_ChannelBytes2Seconds(stream, BASS_ChannelGetLength(stream, BASS_POS_BYTE)) * 10000); //Setting the slider value to the length of the audio
     }else{
         int ErrorCode = BASS_ErrorGetCode();
+        if(ErrorCode != 2)
+        {
         QMessageBox::warning(this, "Error", "ErrorCode: " + QString::number(ErrorCode) + " - BASS_ERROR_HANDLE\nPlease check if the format of the selected file is supported.\nIf you are constantly having this issue, please contact the developer!");
+        return;
+        }
+        playList();
         return;
     }
 

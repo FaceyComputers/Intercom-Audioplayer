@@ -4,6 +4,7 @@ INPUT(
 ./debug-o\settings.o
 ./debug-o\extra_button.o
 ./debug-o\addtime.o
+./debug-o\sheettomp3.o
 ./debug-o\audioproperties.o
 ./debug-o\fileref.o
 ./debug-o\tag.o
